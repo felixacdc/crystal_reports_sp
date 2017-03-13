@@ -50,6 +50,7 @@
             this.btn_parametrisado.TabIndex = 1;
             this.btn_parametrisado.Text = "Reporte Parametrisado";
             this.btn_parametrisado.UseVisualStyleBackColor = true;
+            this.btn_parametrisado.Click += new System.EventHandler(this.btn_parametrisado_Click);
             // 
             // Form1
             // 

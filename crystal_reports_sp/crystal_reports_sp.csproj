@@ -38,6 +38,7 @@
     <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -60,6 +61,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsestandar.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dsPersonas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPersonas.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,18 @@
     </Compile>
     <Compile Include="reporte_estatico.Designer.cs">
       <DependentUpon>reporte_estatico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_parametrisado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_parametrisado.Designer.cs">
+      <DependentUpon>reporte_parametrisado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpdinamico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpdinamico.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="rpestatico.cs">
       <AutoGen>True</AutoGen>
@@ -95,6 +113,13 @@
     <EmbeddedResource Include="reporte_estatico.resx">
       <DependentUpon>reporte_estatico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="reporte_parametrisado.resx">
+      <DependentUpon>reporte_parametrisado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpdinamico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpdinamico.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="rpestatico.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpestatico.cs</LastGenOutput>
@@ -109,6 +134,17 @@
     </None>
     <None Include="dsestandar.xss">
       <DependentUpon>dsestandar.xsd</DependentUpon>
+    </None>
+    <None Include="dsPersonas.xsc">
+      <DependentUpon>dsPersonas.xsd</DependentUpon>
+    </None>
+    <None Include="dsPersonas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPersonas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPersonas.xss">
+      <DependentUpon>dsPersonas.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

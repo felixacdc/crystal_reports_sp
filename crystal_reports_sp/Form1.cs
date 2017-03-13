@@ -22,5 +22,12 @@ namespace crystal_reports_sp
             reporte_estatico frm = new reporte_estatico();
             frm.Show();
         }
+
+        private void btn_parametrisado_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            reporte_parametrisado frm = new reporte_parametrisado();
+            frm.Show();
+        }
     }
 }
