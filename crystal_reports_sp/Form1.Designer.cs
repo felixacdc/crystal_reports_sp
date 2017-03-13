@@ -40,6 +40,7 @@
             this.btn_estatico.TabIndex = 0;
             this.btn_estatico.Text = "Reporte Estatico";
             this.btn_estatico.UseVisualStyleBackColor = true;
+            this.btn_estatico.Click += new System.EventHandler(this.btn_estatico_Click);
             // 
             // btn_parametrisado
             // 

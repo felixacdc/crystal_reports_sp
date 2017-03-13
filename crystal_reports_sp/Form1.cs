@@ -15,5 +15,12 @@ namespace crystal_reports_sp
         {
             InitializeComponent();
         }
+
+        private void btn_estatico_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            reporte_estatico frm = new reporte_estatico();
+            frm.Show();
+        }
     }
 }
